@@ -15,6 +15,7 @@ urlpatterns = [
     path('register', views.register_user, name='register'),
 
     # path for dealer reviews view
+    path(route='reviews/dealer/<int:dealer_id>', view=views.get_dealer_reviews, name='dealer_details'),
 
     # path for add a review view
 
